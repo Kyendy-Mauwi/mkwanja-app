@@ -64,7 +64,10 @@ export default function ReportsScreen({ navigation }) {
       
       <View style={styles.listHeader}>
         <Text style={styles.listTitle}>History</Text>
-        <Text style={styles.hintText}>Tap an item to edit</Text>
+        <Text style={styles.hintText}>Tap to edit.</Text>
+        {/* <View style={styles.hintBadge}>
+            <Text style={styles.hintText}>Tap to edit.</Text>
+        </View> */}
       </View>
 
       <FlatList
@@ -122,6 +125,12 @@ const styles = StyleSheet.create({
   
   listHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, paddingHorizontal: 5 },
   listTitle: { fontSize: 18, fontWeight: 'bold', color: '#333' },
+  hintBadge: { 
+    backgroundColor: '#e7f1ff', 
+    paddingHorizontal: 20, 
+    paddingVertical: 4, 
+    borderRadius: 8 
+  },
   hintText: { fontSize: 12, color: '#007bff', fontStyle: 'italic' },
 
   itemCard: { flexDirection: 'row', justifyContent: 'space-between', padding: 15, backgroundColor: '#fff', borderRadius: 12, marginBottom: 10, elevation: 1 },
@@ -138,3 +147,4 @@ const styles = StyleSheet.create({
   saveBtnText: { color: '#fff', textAlign: 'center', fontWeight: 'bold' },
   cancelBtnText: { textAlign: 'center', color: '#d9534f', marginTop: 15 }
 });
+
