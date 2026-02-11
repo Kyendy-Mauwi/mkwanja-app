@@ -15,7 +15,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mauwi.mkwanja",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Mkwanja uses Face ID to securely encrypt your financial records."
+      }
     },
     "android": {
       "package": "com.mauwi.mkwanja",
